@@ -11,18 +11,18 @@ st.set_page_config(page_title="Student Study Plan & Timetable Generator", layout
 
 
 # Database connection details
-db_config = {
-    'user': 'root',
-    'password': 'spurtHi%4029%21%21',  # Replace with your actual MySQL password
-    'host': 'localhost',
-    'database': 'student_performance_db',
-    'port': 3306  # Adjust if your MySQL server uses a different port
-}
+# db_config = {
+#     'user': 'root',
+#     'password': 'spurtHi%4029%21%21',  # Replace with your actual MySQL password
+#     'host': 'localhost',
+#     'database': 'student_performance_db',
+#     'port': 3306  # Adjust if your MySQL server uses a different port
+# }
 
 # Create a connection to the MySQL database
 try:
     engine = create_engine(
-        f"mysql+mysqlconnector://{db_config['user']}:{db_config['password']}@{db_config['host']}:{db_config['port']}/{db_config['database']}"
+        f"mysql+mysqlconnector://student_performance_db.db "
     )
     st.success("Connected to the database successfully.")
 except SQLAlchemyError as e:
