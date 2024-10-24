@@ -3,8 +3,12 @@ import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy.exc import SQLAlchemyError
 
-# Set page configuration (must be the first command in the script)
-st.set_page_config(page_title="Study Plan & Timetable Generator", layout="centered")
+# Set page configuration (must be the first Streamlit command)
+st.set_page_config(page_title="Student Study Plan & Timetable Generator", layout="centered")
+
+# Rest of your code follows here
+# Database connection details, functions, etc.
+
 
 # Database connection details
 db_config = {
