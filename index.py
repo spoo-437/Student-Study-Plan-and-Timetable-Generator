@@ -8,10 +8,10 @@ st.set_page_config(page_title="Study Plan & Timetable Generator", layout="center
 
 # Database connection details
 db_config = {
-    'user': 'root',
-    'password': 'spurtHi%4029%21%21',  # Replace with your actual MySQL password
-    'host': 'localhost',
-    'database': 'student_performance_db',
+    'user': 'sql12742101',
+    'password': 'LTIj5A3sL6',  # Replace with your actual MySQL password
+    'host': 'sql12.freesqldatabase.com',
+    'database': 'sql12742101',
     'port': 3306  # Adjust if your MySQL server uses a different port
 }
 
